@@ -17,10 +17,10 @@ header {
 
 .filters {
     float: left;
-    margin-right: 20px;
-    width: 20%;
+    width: 15%;
 }
 
 .filters label {
     width: 40%;
+    display: inline-block;
 }
