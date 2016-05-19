@@ -24,3 +24,7 @@ header {
     width: 40%;
     display: inline-block;
 }
+
+.filters li {
+    list-style-type: none;
+}
