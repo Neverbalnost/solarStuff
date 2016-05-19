@@ -7,4 +7,5 @@ solar.controller('diagram', function ($scope, $http) {
               }, function errorCallback(response) {
                   console.log(response);
               });
+    $scope.names = $scope.planets[0]["v"];
 })
