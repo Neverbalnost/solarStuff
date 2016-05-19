@@ -15,12 +15,12 @@ header {
     padding: 20px;
 }
 
-.filter {
+.filters {
     float: left;
     margin-right: 20px;
     width: 20%;
 }
 
-.filter label {
+.filters label {
     width: 40%;
 }
