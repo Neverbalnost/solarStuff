@@ -13,6 +13,7 @@ header {
 .diagramm .column {
     float: left;
     padding: 20px;
+    height: 500px;
 }
 
 .filters {
@@ -34,4 +35,10 @@ header {
 .filters input {
     position:absolute;
     right:0;
+}
+
+
+.cube {
+    background: #333;
+    width: 100%;    
 }
