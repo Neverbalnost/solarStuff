@@ -11,16 +11,18 @@
             <h4>By Elena Kogodeeva</h4>
         </header>
         <section class="diagramm" ng-controller="diagram">
-            <div class="filters">
-                <ul>
-                    <li ng-repeat="name in names"><label for="{{name}}-chbx">{{name}} <input name="planets-choice"  type="checkbox" ng-model="search" ng-true-value="'{{name}}'" ng-false-value="" /></li>
-                </ul>
-
-                Venus <input type="checkbox"  ng-model="search" ng-true-value="'Venus'" ng-false-value="" /><br>
-                Mercury <input type="checkbox"  ng-model="search" ng-true-value="'Mercury'" ng-false-value="" /><br>
-                Earth <input type="checkbox"  ng-model="search" ng-true-value="'Earth'" ng-false-value="" /><br>
-
-            </div>
+            <ul class="filters">
+                <li>Mercury <input type="checkbox"  ng-model="search" ng-true-value="'Mercury'" ng-false-value="" /></li>
+                <li>Venus <input type="checkbox"  ng-model="search" ng-true-value="'Venus'" ng-false-value="" /></li>
+                <li>Earth <input type="checkbox"  ng-model="search" ng-true-value="'Earth'" ng-false-value="" /></li>
+                <li>Moon <input type="checkbox"  ng-model="search" ng-true-value="'Moon'" ng-false-value="" /></li>
+                <li>Mars <input type="checkbox"  ng-model="search" ng-true-value="'Mars'" ng-false-value="" /></li>
+                <li>Jupiter <input type="checkbox"  ng-model="search" ng-true-value="'Jupiter'" ng-false-value="" /></li>
+                <li>Saturn <input type="checkbox"  ng-model="search" ng-true-value="'Saturn'" ng-false-value="" /></li>
+                <li>Uranus <input type="checkbox"  ng-model="search" ng-true-value="'Uranus'" ng-false-value="" /></li>
+                <li>Neptune <input type="checkbox"  ng-model="search" ng-true-value="'Neptune'" ng-false-value="" /></li>
+                <li>Pluto <input type="checkbox"  ng-model="search" ng-true-value="'Pluto'" ng-false-value="" /></li>
+            </ul>
             <div class="diagram-wrap">
                 <div class="column" ng-repeat="name in names | filter:search">
                     <label>{{name}}</label>
