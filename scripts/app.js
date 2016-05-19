@@ -8,12 +8,12 @@ solar.controller('diagram', function ($scope, $http) {
             $scope.planets = []
             for (var i = 0; i< response.data.col[0].v.length; i++) {
                 var planet = {
-                    name: {value: response.data.col[0].v[i], label: $scope.planets.col[0].col.label},
-                    mass: {value: response.data.col[1].v[i], label: $scope.planets.col[1].col.label},
-                    diameter: {value: response.data.col[2].v[i], label: $scope.planets.col[2].col.label},
-                    density: {value: response.data.col[3].v[i], label: $scope.planets.col[3].col.label},
-                    gravity: {value: response.data.col[4].v[i], label: $scope.planets.col[4].col.label},
-                    temperature: {value: response.data.col[5].v[i], label: $scope.planets.col[5].col.label},
+                    name: {value: response.data.col[0].v[i], label: response.data.col[0].col.label},
+                    mass: {value: response.data.col[1].v[i], label: response.data.col[1].col.label},
+                    diameter: {value: response.data.col[2].v[i], label: response.data.col[2].col.label},
+                    density: {value: response.data.col[3].v[i], label: response.data.col[3].col.label},
+                    gravity: {value: response.data.col[4].v[i], label: response.data.col[4].col.label},
+                    temperature: {value: response.data.col[5].v[i], label: response.data.col[5].col.label},
                 }
                 $scope.planets.push(planet);
             }
