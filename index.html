@@ -12,14 +12,16 @@
         </header>
         <section class="diagramm" ng-controller="diagram">
             <div class="filters">
+<!--
                 <ul>
                     <li ng-repeat="name in names"><label for="{{name}}-chbx">{{name}}></label> <input id="{{name}}-chbx" type="checkbox" ng-click="includePlanet("'{{name}}'")" /></li>
                 </ul>
-<!--
-                Venus <input type="checkbox"  ng-model="search" ng-true-value="'Venus'" ng-false-value="" /><br>
-                Mercury <input type="checkbox"  ng-model="search" ng-true-value="'Mercury'" ng-false-value="" /><br>
-                Earth <input type="checkbox"  ng-model="search" ng-true-value="'Earth'" ng-false-value="" /><br>
 -->
+
+                Venus <input type="checkbox"  ng-click="includePlanet('Venus')" /><br>
+                Mercury <input type="checkbox"  ng-click="includePlanet('Mercury')" /><br>
+                Earth <input type="checkbox"  ng-click="includePlanet('Earth')" /><br>
+
             </div>
             <div class="diagram-wrap">
                 <div class="column" ng-repeat="name in names | filter:planetFilter">
