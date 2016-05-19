@@ -25,8 +25,8 @@
             </ul>
             <div class="diagram-wrap">
                 <div class="column" ng-repeat="planet in planets | filter:planetFilter">
-                    <div class="cube" style="height: {{planet.mass.value}}%"></div>
                     <label>{{planet.name.value}}</label>
+                    <div class="cube" style="height: {{planet.mass.value}}%"></div>
                 </div>
             </div>
         </section>
