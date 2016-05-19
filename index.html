@@ -12,16 +12,16 @@
         </header>
         <section class="diagramm" ng-controller="diagram">
             <ul class="filters">
-                <li>Mercury <input type="checkbox"  ng-model="search" ng-true-value="'Mercury'" ng-false-value="" /></li>
-                <li>Venus <input type="checkbox"  ng-model="search" ng-true-value="'Venus'" ng-false-value="" /></li>
-                <li>Earth <input type="checkbox"  ng-model="search" ng-true-value="'Earth'" ng-false-value="" /></li>
-                <li>Moon <input type="checkbox"  ng-model="search" ng-true-value="'Moon'" ng-false-value="" /></li>
-                <li>Mars <input type="checkbox"  ng-model="search" ng-true-value="'Mars'" ng-false-value="" /></li>
-                <li>Jupiter <input type="checkbox"  ng-model="search" ng-true-value="'Jupiter'" ng-false-value="" /></li>
-                <li>Saturn <input type="checkbox"  ng-model="search" ng-true-value="'Saturn'" ng-false-value="" /></li>
-                <li>Uranus <input type="checkbox"  ng-model="search" ng-true-value="'Uranus'" ng-false-value="" /></li>
-                <li>Neptune <input type="checkbox"  ng-model="search" ng-true-value="'Neptune'" ng-false-value="" /></li>
-                <li>Pluto <input type="checkbox"  ng-model="search" ng-true-value="'Pluto'" ng-false-value="" /></li>
+                <li>Mercury <input name="planet-choice" type="checkbox" checked ng-model="search" ng-true-value="'Mercury'" ng-false-value="" /></li>
+                <li>Venus <input name="planet-choice" type="checkbox" checked ng-model="search" ng-true-value="'Venus'" ng-false-value="" /></li>
+                <li>Earth <input name="planet-choice" type="checkbox" checked ng-model="search" ng-true-value="'Earth'" ng-false-value="" /></li>
+                <li>Moon <input name="planet-choice" type="checkbox" checked ng-model="search" ng-true-value="'Moon'" ng-false-value="" /></li>
+                <li>Mars <input name="planet-choice" type="checkbox" checked ng-model="search" ng-true-value="'Mars'" ng-false-value="" /></li>
+                <li>Jupiter <input name="planet-choice" type="checkbox" checked ng-model="search" ng-true-value="'Jupiter'" ng-false-value="" /></li>
+                <li>Saturn <input name="planet-choice" type="checkbox" checked ng-model="search" ng-true-value="'Saturn'" ng-false-value="" /></li>
+                <li>Uranus <input name="planet-choice" type="checkbox" checked ng-model="search" ng-true-value="'Uranus'" ng-false-value="" /></li>
+                <li>Neptune <input name="planet-choice" type="checkbox" checked ng-model="search" ng-true-value="'Neptune'" ng-false-value="" /></li>
+                <li>Pluto <input name="planet-choice" type="checkbox"checked  ng-model="search" ng-true-value="'Pluto'" ng-false-value="" /></li>
             </ul>
             <div class="diagram-wrap">
                 <div class="column" ng-repeat="name in names | filter:search">
