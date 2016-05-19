@@ -3,9 +3,14 @@
 <html>
     <head>
         <title>Meet the Solar System!</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <section ng-app="solar">
+        <header>
+            <h1>Meet the Solar System!</h1>
+            <h4>By Elena Kogodeeva</h4>
+        </header>
+        <section class="diagramm" ng-app="solar">
             <div class="diagram-wrap" ng-controller="diagram">
                 <div class="column" ng-repeat="name in names">
                     <label>{{name}}</label>
