@@ -21,7 +21,7 @@ solar.controller('diagram', function ($scope, $http) {
     }
     
     $scope.planetFilter = function(planet) {
-        if ($scope.colourIncludes.length > 0) {
+        if ($scope.planetIncludes.length > 0) {
             if ($.inArray(planet, $scope.planetIncludes) < 0)
                 return;
         }
