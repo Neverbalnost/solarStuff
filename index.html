@@ -24,8 +24,9 @@
                 <li><label>Pluto</label> <input type="checkbox"  ng-click="includePlanet('Pluto')" /></li>                             
             </ul>
             <div class="diagram-wrap">
-                <div class="column" ng-repeat="name in names | filter:planetFilter">
-                    <label>{{name}}</label>
+                <div class="column" ng-repeat="planet in planets | filter:planetFilter">
+                    <div class="cube" style="height"></div>
+                    <label>{{planet.name.value}}</label>
                 </div>
             </div>
         </section>
