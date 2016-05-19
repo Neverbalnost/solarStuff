@@ -5,18 +5,18 @@
         <title>Meet the Solar System!</title>
         <link rel="stylesheet" href="style.css">
     </head>
-    <body>
+    <body ng-app="solar">
         <header>
             <h1>Meet the Solar System!</h1>
             <h4>By Elena Kogodeeva</h4>
         </header>
-        <section class="diagramm" ng-app="solar">
+        <section class="diagramm" ng-controller="diagram">
             <div class="filters">
                 <div ng-repeat="name in names">
-                    {{name}} <input type="checkbox"  data-ng-model="search.name" ng-true-value="{{name}" ng-false-value="" />
+                    {{name}} <input type="checkbox" data-ng-model="search.name" ng-true-value="{{name}" ng-false-value="" />
                 </div>
             </div>
-            <div class="diagram-wrap" ng-controller="diagram">
+            <div class="diagram-wrap">
                 <div class="column" ng-repeat="name in names | filter:search">
                     <label>{{name}}</label>
                 </div>
