@@ -18,6 +18,7 @@ header {
 .filters {
     float: left;
     width: 15%;
+    min-width: 200px;
 }
 
 .filters label {
