@@ -8,4 +8,5 @@ solar.controller('diagram', function ($scope, $http) {
               }, function errorCallback(response) {
                   console.log(response);
               });
+    
 })

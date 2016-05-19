@@ -11,8 +11,13 @@
             <h4>By Elena Kogodeeva</h4>
         </header>
         <section class="diagramm" ng-app="solar">
+            <div class="filters">
+                <div ng-repeat="name in names">
+                    {{name}} <input type="checkbox"  data-ng-model="search.name" ng-true-value="{{name}" ng-false-value="" />
+                </div>
+            </div>
             <div class="diagram-wrap" ng-controller="diagram">
-                <div class="column" ng-repeat="name in names">
+                <div class="column" ng-repeat="name in names | filter:search">
                     <label>{{name}}</label>
                 </div>
             </div>
