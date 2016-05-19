@@ -12,9 +12,9 @@
         </header>
         <section class="diagramm" ng-controller="diagram">
             <div class="filters">
-                Venus <input type="checkbox"  data-ng-model="search.name" ng-true-value="Venus" ng-false-value="" /><br>
-                Mercury <input type="checkbox"  data-ng-model="search.name" ng-true-value="Mercury" ng-false-value="" /><br>
-                Earth <input type="checkbox"  data-ng-model="search.name" ng-true-value="Earth" ng-false-value="" /><br>
+                Venus <input type="checkbox"  ng-model="search" ng-true-value="Venus" ng-false-value="" /><br>
+                Mercury <input type="checkbox"  ng-model="search" ng-true-value="Mercury" ng-false-value="" /><br>
+                Earth <input type="checkbox"  ng-model="search" ng-true-value="Earth" ng-false-value="" /><br>
             </div>
             <div class="diagram-wrap">
                 <div class="column" ng-repeat="name in names | filter:search">
