@@ -4,7 +4,7 @@ solar.config(['$routeProvider',
   function($routeProvider) {
     $routeProvider.
       when('/mass', {
-        templateUrl: 'partials/mass.html'
+        templateUrl: 'mass.html'
       }).
       otherwise({
         redirectTo: '/mass'
