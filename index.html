@@ -23,15 +23,11 @@
                 <li><label>Neptune</label> <input type="checkbox"  ng-click="includePlanet('Neptune')" /></li>
                 <li><label>Pluto</label> <input type="checkbox"  ng-click="includePlanet('Pluto')" /></li>                             
             </ul>
-            <div class="diagram-wrap">
-                <div class="column" ng-repeat="planet in planets | filter:planetFilter">
-                    <label>{{planet.name.value}}</label>
-                    <div class="cube" style="height: {{planet.mass.value}}px"></div>
-                </div>
-            </div>
+            <div class="diagram-wrap" ng-view></div>
         </section>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
         <script src="scripts/app.js"></script>
+        <script src="scripts/controller.js"></script>
     </body>
 </html>
