@@ -7,6 +7,6 @@ solar.config(['$routeProvider',
         templateUrl: 'mass.html'
       }).
       otherwise({
-        redirectTo: '/mass'
+        redirectTo: 'mass'
       });
   }]);
