@@ -6,9 +6,6 @@ solar.config(['$routeProvider',
       when('/mass', {
         templateUrl: 'mass.html'
       }).
-      when('/diameter', {
-        templateUrl: 'diameter.html'
-      }).    
       otherwise({
         redirectTo: '/mass'
       });
