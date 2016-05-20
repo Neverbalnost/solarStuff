@@ -1,4 +1,5 @@
 <div class="column" ng-repeat="planet in planets | filter:planetFilter">
     <label>{{planet.name.value}}</label>
+	<label>{{planet.temperature.value}}</label>
     <div class="cube" style="height: {{planet.temperature.height}}%"></div>
 </div>

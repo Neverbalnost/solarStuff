@@ -1,4 +1,6 @@
+<h2>{{planets[0].mass.label}}</h2>
 <div class="column" ng-repeat="planet in planets | filter:planetFilter">
     <label>{{planet.name.value}}</label>
+	<label>{{planet.mass.value}}</label>
     <div class="cube" style="height: {{planet.mass.height}}%"></div>
 </div>
