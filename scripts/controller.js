@@ -22,6 +22,8 @@ solarController.controller('diagram', function ($scope, $http) {
 					values.forEach(function(val, index, array) {
 						array[index] = val + Math.abs(min);
 					})
+					
+					max = Math.max.apply(null, values);
 				}
 					
 				values.forEach(function(val) {
