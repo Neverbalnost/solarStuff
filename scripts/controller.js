@@ -20,7 +20,7 @@ solarController.controller('diagram', function ($scope, $http) {
 				
 				if (min < 0) {
 					response.data.col[i].v.forEach(function(val, index, array) {
-						array[index] = val + Math.abs(min);
+						array[index] = parseFloat(val) + Math.abs(min);
 					})
 				}
 					
