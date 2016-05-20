@@ -1,5 +1,7 @@
 var solar = angular.module('solar', ['ngRoute', 'solarController']);
 
+/*Routing to switch beetween measurements*/
+
 solar.config(['$routeProvider',
   function($routeProvider) {
     $routeProvider.

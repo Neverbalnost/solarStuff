@@ -6,6 +6,8 @@ solarController.controller('diagram', function ($scope, $http) {
         .then(function successCallback(response) {
             $scope.planets = [];
 			
+			/*Here I calculate column heights*/
+			
 			for (var i = 1; i < response.data.col.length; i++) {
 				
 				var values = [],
@@ -32,6 +34,8 @@ solarController.controller('diagram', function ($scope, $http) {
 				response.data.col[i].p = percents;
 			}
 			
+			/*Here data is being reformared for simple use with ng-repeat*/
+			
             for (var i = 0; i < response.data.col[0].v.length; i++) {
                 var planet = {
                     name: {value: response.data.col[0].v[i], label: response.data.col[0].col.label},
@@ -47,6 +51,8 @@ solarController.controller('diagram', function ($scope, $http) {
             console.log(response);
         });
     
+	/*It's a planet filter*/
+	
     $scope.planetIncludes = [];
     
     $scope.includePlanet = function(planet) {
