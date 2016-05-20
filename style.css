@@ -10,6 +10,11 @@ header {
     padding: 20px;
 }
 
+header a {
+    color: #fff;
+    padding: 0 10px 0 0;
+}
+
 .diagramm .column {
     float: left;
     padding: 20px;
