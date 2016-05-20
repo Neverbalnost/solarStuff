@@ -9,7 +9,7 @@ solarController.controller('diagram', function ($scope, $http) {
                 var planet = {
                     name: {value: response.data.col[0].v[i], label: response.data.col[0].col.label},
                     mass: {value: response.data.col[1].v[i], label: response.data.col[1].col.label},
-                    diameter: {value: parseInt(response.data.col[2].v[i].replace(/,/g, ""), 10)/10, label: response.data.col[2].col.label},
+                    diameter: {value: parseInt(response.data.col[2].v[i].replace(/,/g, ""), 10)/100, label: response.data.col[2].col.label},
                     density: {value: response.data.col[3].v[i], label: response.data.col[3].col.label},
                     gravity: {value: response.data.col[4].v[i], label: response.data.col[4].col.label},
                     temperature: {value: response.data.col[5].v[i], label: response.data.col[5].col.label},
