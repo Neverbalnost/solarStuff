@@ -20,6 +20,10 @@ header a {
     margin-left: 20px;
 }
 
+.diagram-wrap .label {
+	display:block;
+}
+
 .diagramm .column {
     float: left;
     padding: 5px;
