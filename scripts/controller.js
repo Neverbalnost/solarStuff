@@ -12,7 +12,7 @@ solarController.controller('diagram', function ($scope, $http) {
 					max,
 					percents = [];
 					
-				response.data.col[i].v.forEach(function(item) {values.push(parseInt(item.replace(/,/g, ""), 10))});
+				response.data.col[i].v.forEach(function(item) {values.push(parseFloat(item.replace(/,/g, "")))});
 				
 				max = Math.max.apply(null, values);
 					
