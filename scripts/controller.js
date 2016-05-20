@@ -19,12 +19,12 @@ solarController.controller('diagram', function ($scope, $http) {
 				min = Math.min.apply(null, values);
 				
 				if (min < 0) {
-					response.data.col[i].v.forEach(function(val, index, array) {
-						array[index] = parseFloat(val) + Math.abs(min);
+					values.forEach(function(val, index, array) {
+						array[index] = val + Math.abs(min);
 					})
 				}
 					
-				response.data.col[i].v.forEach(function(val) {
+				values.forEach(function(val) {
 					percents.push(val*100/max);
 				})
 				response.data.col[i].p = percents;
